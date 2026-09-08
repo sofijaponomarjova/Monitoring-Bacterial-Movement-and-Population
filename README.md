@@ -10,3 +10,5 @@ The project focuses on answering the following research questions:
 1. What are the average counts and statistical uncertainties of each bacterial stain?
 2. Is there any asymmetry between the normal and the mutant strain, if so - how large is it?
 3. Is there any asymmetry between the normal and the mutant strain as a function of their momentum?
+
+кркто
