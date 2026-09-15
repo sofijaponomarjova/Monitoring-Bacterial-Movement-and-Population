@@ -1,4 +1,5 @@
 from math import sqrt #imports sqrt function from math library
+import os #library to create files etc.
 
 def calculate_momentum(x,y,z): #defines the function to calculate momentum
     sqrd_values=x**2+y**2+z**2 #saves into a variable sum of squared momentum components
@@ -9,14 +10,39 @@ def calculate_momentum(x,y,z): #defines the function to calculate momentum
         print("Can't compute the square root of negative number")
     except: #if another error occurs warns the user about error
         print("An error occured")
-    
 
+def clean_file(filename): #a function to clean dataset
+    cleaned_filename="output-Set0-cleaned.txt" #introduces name for cleaned file
+    if os.path.exists(cleaned_filename): #check if cleaned version already exists
+        return "output-Set0-cleaned.txt" #refers user to it
+    bacterial_id=["211", "-211", "321", "-321", "2212", "-2212", "3122", "-3122", "3312", "-3312", "3334", "-3334"] #list of all existing bacterial id
+    incorrect_values=0 #counts how many data lines were removed
+    with open(filename, "r") as file: #opens file for reading
+        lines=file.readlines() #reads file lien by line and saves into a list
+        clean_version=[lines[0]] #creates a list with cleaned version of file, writes the header into it
+
+        for line in lines [1:]: #iterates over lines of file starting from 2nd (skips header)
+            values=line.split() #splits line in separate values 
+            if values[3] in bacterial_id: #checks if bacterial id is valid (present in list of existing id's)
+                clean_version.append(line) #if so, adds to cleaned_list
+            else:
+                incorrect_values+=1 #counts incorrect bacterial id
+
+    if incorrect_values>0: #checks if during cleaning any data was removed 
+        with open(cleaned_filename, 'w') as final_file: #opens a new file
+            final_file.writelines(clean_version) #saves cleaned data to new file
+        return "output-Set0-cleaned.txt" #returns it for further analyses
+    else: #if no data was removed
+        return filename #returns the original file for further analyses
+
+    
 print("--The momentum of each bacteria--\n") #prints the title
-with open("output-Set0.txt", "r") as file: #opens the file for reading
+filename=clean_file("output-Set0.txt") #saves the name of file that will be used in a variable
+with open(filename, "r") as file: #opens the file for reading
     for i, line in enumerate(file): #iterates over each line in file, saves line index as "i" and line content as "line"
+        values=line.split() #splits the line string into separate values
         if i==0: 
             continue #skips the first line
-        values=line.split() #splits the line string into separate values
         x=float(values[0]) #saves x component as separate variable
         y=float(values[1]) #saves y component as separate variable
         z=float(values[2]) #saves z component as separate variable
