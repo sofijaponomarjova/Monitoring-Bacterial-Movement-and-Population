@@ -16,7 +16,7 @@ The data set contains following bacterial strains:
 * _Capsule-deficient streptococcus pneumoniae_
 * _Mycobacterium tuberculosis_
 * _Drug-resistant mycobacterium tuberculosis_
-* _Salmonella enteric_
+* _Salmonella enterica_
 * _Salmonella mutant_
 
 ## _Research Questions_
@@ -32,10 +32,16 @@ The project focuses on answering the following research questions:
 2. Clone the repository
 ```bash
 git clone https://github.com/sofijaponomarjova/Monitoring-Bacterial-Movement-and-Population.git
-cd TrackingBacterialMovement
+cd Monitoring-Bacterial-Movement-and-Population
 ```
-**Alternatively, downoload the repository as a ZIP file:**
+**Alternatively, download the repository as a ZIP file:**
 * Press green button "<> Code"
-* Click "Downoload ZIP"
+* Click "Download ZIP"
 
 ## _Usage_
+1. Open the folder
+2. Run in Terminal
+
+```python3 task2.py```
+
+This program cleans the data and then calculates the momentum for each bacteria.
