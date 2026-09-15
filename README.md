@@ -1,5 +1,5 @@
 # **Monitoring Bacterial Movement and Populations**
-## Description
+## _Description_
 This project aims to compare the bacterial movement and population growth under specific nutrient or stress conditions. 
 
 The data were obtained from a simulation of bacterial tracking experiment. Each input contains the ID of experiment run, number of bacteria tracked, their 3D momentum components (px, py, pz) in 10⁻²⁰ kg m/s and ID of bacterial strain or genetic variant.
@@ -26,7 +26,7 @@ The project focuses on answering the following research questions:
 2. Is there any asymmetry between the normal and the mutant strain, if so - how large is it?
 3. Is there any asymmetry between the normal and the mutant strain as a function of their momentum?
 
-## Installation
+## _Installation_
 1. Make sure you have Python 3 installed. No additional packages are required, only Python's standart library.
 
 2. Clone the repository
@@ -38,4 +38,4 @@ cd TrackingBacterialMovement
 * Press green button "<> Code"
 * Click "Downoload ZIP"
 
-## Usage
+## _Usage_
