@@ -1,5 +1,6 @@
 from math import sqrt #imports sqrt function from math library
 import os #library to create files etc.
+import math
 
 bacterial_id={
     "211":"E. coli WT", 
@@ -68,4 +69,39 @@ def bacterial_momentum():
             momentum=calculate_momentum(x, y, z) #calls the function to calculate the momentum and saves the result in a variable
             print(f"Bacteria No. {i} Momentum: {momentum}") #prints the calculated momentum & explains what's printed
 
-bacterial_momentum()
+def count_bacteria(bacterial_id):
+    #dataset=input("Enter the name of the file you want to work with:\n")
+    dataset="output-Set7.txt"
+    print("Here's the list of bacterias present in the experiment:\n")
+    for name in bacterial_id:
+        print(f"- {bacterial_id[name]} ID {name}")
+    print()
+    bacterial_strain=input("Which bacteria are you interested into? Enter bacteria's ID (e.g. '211')\n")
+    event_count=0
+    bacteria_count=0
+    per_event_count=0
+    with open(dataset, "r") as file:
+        for line in file:
+            values=line.split()
+            if len(values)==2:
+                if per_event_count>0:
+                    event_count+=1
+                    per_event_count=0
+            else:
+                if bacterial_strain==values[3]:
+                    bacteria_count+=1
+                    per_event_count+=1
+        if per_event_count>0:
+            event_count+=1
+    average_count=bacteria_count/event_count
+    uncertanty=math.sqrt(average_count)
+    print(f"There is on average {average_count} ± {uncertanty} bacterias per event.")               
+    #print(f"There are {event_count} events and {bacteria_count} {bacterial_strain}")
+
+#bacterial_momentum()
+count_bacteria(bacterial_id)
+
+#round
+#comments
+#check
+#save to github
