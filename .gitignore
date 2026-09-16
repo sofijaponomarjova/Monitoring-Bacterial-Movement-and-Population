@@ -1,4 +1,2 @@
 .DS_Store
-output-Set0-cleaned.txt
-output-Set7.txt
-output-Set0.txt
+*.txt
