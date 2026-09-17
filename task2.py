@@ -56,7 +56,7 @@ def clean_file(filename, bacterial_id): #a function to clean dataset
 
 def bacterial_momentum():
     print("--The momentum of each bacteria--\n") #prints the title
-    dataset=input("Enter the name of the file you want to work with:") #asks user for file name
+    dataset=input("Enter the path to the file you want to work with:") #asks user for file name
     filename=clean_file(dataset, bacterial_id) #saves the name of file that will be used in a variable
     with open(filename, "r") as file: #opens the file for reading
         for i, line in enumerate(file): #iterates over each line in file, saves line index as "i" and line content as "line"
@@ -67,7 +67,7 @@ def bacterial_momentum():
             y=float(values[1]) #saves y component as separate variable
             z=float(values[2]) #saves z component as separate variable
             momentum=calculate_momentum(x, y, z) #calls the function to calculate the momentum and saves the result in a variable
-            print(f"Bacteria No. {i} Momentum: {momentum}") #prints the calculated momentum & explains what's printed
+            print(f"Bacteria No. {i} Strain: {bacterial_id[values[3]]} Momentum: {momentum}") #prints the calculated momentum & explains what's printed
 
 def count_bacteria(bacterial_id):
     #dataset=input("Enter the name of the file you want to work with:\n")
@@ -98,10 +98,6 @@ def count_bacteria(bacterial_id):
     print(f"There is on average {average_count} ± {uncertanty} bacterias per event.")               
     #print(f"There are {event_count} events and {bacteria_count} {bacterial_strain}")
 
-#bacterial_momentum()
-count_bacteria(bacterial_id)
+bacterial_momentum()
+#count_bacteria(bacterial_id)
 
-#round
-#comments
-#check
-#save to github
