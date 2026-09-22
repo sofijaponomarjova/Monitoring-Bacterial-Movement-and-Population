@@ -41,6 +41,8 @@ def clean_file(filename, bacterial_id): #a function to clean dataset
 
         for line in lines [1:]: #iterates over lines of file starting from 2nd (skips header)
             values=line.split() #splits line in separate values 
+            if len(values)!=4:
+                continue
             if values[3] in bacterial_id: #checks if bacterial id is valid (present in list of existing id's)
                 clean_version.append(line) #if so, adds to cleaned_list
             else:
@@ -61,6 +63,8 @@ def bacterial_momentum():
     with open(filename, "r") as file: #opens the file for reading
         for i, line in enumerate(file): #iterates over each line in file, saves line index as "i" and line content as "line"
             values=line.split() #splits the line string into separate values
+            if len(values)!=4:
+                continue
             if i==0: 
                 continue #skips the first line
             x=float(values[0]) #saves x component as separate variable
@@ -69,35 +73,8 @@ def bacterial_momentum():
             momentum=calculate_momentum(x, y, z) #calls the function to calculate the momentum and saves the result in a variable
             print(f"Bacteria No. {i} Strain: {bacterial_id[values[3]]} Momentum: {momentum}") #prints the calculated momentum & explains what's printed
 
-def count_bacteria(bacterial_id):
-    #dataset=input("Enter the name of the file you want to work with:\n")
-    dataset="output-Set7.txt"
-    print("Here's the list of bacterias present in the experiment:\n")
-    for name in bacterial_id:
-        print(f"- {bacterial_id[name]} ID {name}")
-    print()
-    bacterial_strain=input("Which bacteria are you interested into? Enter bacteria's ID (e.g. '211')\n")
-    event_count=0
-    bacteria_count=0
-    per_event_count=0
-    with open(dataset, "r") as file:
-        for line in file:
-            values=line.split()
-            if len(values)==2:
-                if per_event_count>0:
-                    event_count+=1
-                    per_event_count=0
-            else:
-                if bacterial_strain==values[3]:
-                    bacteria_count+=1
-                    per_event_count+=1
-        if per_event_count>0:
-            event_count+=1
-    average_count=bacteria_count/event_count
-    uncertanty=math.sqrt(average_count)
-    print(f"There is on average {average_count} ± {uncertanty} bacterias per event.")               
-    #print(f"There are {event_count} events and {bacteria_count} {bacterial_strain}")
+
 
 bacterial_momentum()
-#count_bacteria(bacterial_id)
+
 
