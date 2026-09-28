@@ -56,26 +56,26 @@ You can downoload the dataset files here: https://surfdrive.surf.nl/index.php/s/
 
 The project indicates following average counts and statistical uncertainties of each bacterial strain:
 
-* E. coli WT: 19.964042225262727 ± 0.03109117275389914
+* E. coli WT: 19.964037869108523 ± 0.03277297367603035
 
-* E. coli mutant: 19.931721898491062 ± 0.030227891773527003
+* E. coli mutant: 19.93171763208854 ± 0.031862995623137325
 
-* Bacillus subtilis WT: 2.5109760539147103 ± 0.004516178392308326
+* Bacillus subtilis WT: 2.5109753063732927 ± 0.004760470013110588
 
-* Bacillus subtilis mutant: 2.5052808669341133 ± 0.005227600707582858
+* Bacillus subtilis mutant: 2.505280161018257 ± 0.005510374977956562
 
-* Pseudomonas aeruginosa WT: 1.2089141646344372 ± 0.0018175493915266539
+* Pseudomonas aeruginosa WT: 1.2089139502348183 ± 0.0019158652790257898
 
-* Pseudomonas aeruginosa antibiotic-resistant: 1.1850237360153653 ± 0.002294977826980593
+* Pseudomonas aeruginosa antibiotic-resistant: 1.1850234211525426 ± 0.002419119037614167
 
-* Streptococcus pneumoniae: 0.27680009057491506 ± 0.0010209803872882224
+* Streptococcus pneumoniae: 0.2767999701818043 ± 0.0010762078233972018
 
-* Capsule-deficient streptococcus pneumoniae: 0.2718939099983327 ± 0.0009346949138909668
+* Capsule-deficient streptococcus pneumoniae: 0.27189383682165774 ± 0.0009852549484234705
 
-* Mycobacterium tuberculosis: 0.03946993773442613 ± 0.00026898271608880936
+* Mycobacterium tuberculosis: 0.03946988622278006 ± 0.0002835326780196852
 
-* Drug-resistant mycobacterium tuberculosis: 0.039028935218028325 ± 0.0003811027180490271
+* Drug-resistant mycobacterium tuberculosis: 0.03902889764557607 ± 0.00040171753717196235
 
-* Salmonella enterica: 0.001187962955206821 ± 3.9560943945588565e-05
+* Salmonella enterica: 0.0011879603834065208 ± 4.1700896418102735e-05
 
-* Salmonella mutant: 0.0011524239744295493 ± 4.822439205619068e-05
+* Salmonella mutant: 0.0011524212548259536 ± 5.083297255816441e-05
