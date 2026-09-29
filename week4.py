@@ -140,7 +140,7 @@ def main():
         print(name)
         total_count=round(value[0]*total_events)
         print(f"Total count: {total_count}")
-        print(f"Weighted Average: {round(value[0],5)} ± {round(value[1],5)}\n")
+        print(f"Weighted Average: {round(value[0],7)} ± {round(value[1],7)}\n")
 
     print("==========================================")
     print("SYMMETRY AND ASYMMETRY REPORT")
@@ -148,7 +148,7 @@ def main():
     print("Here are the differences between wild type and mutant of each bacterial strain:")
     differences, uncertainties =find_symmetry(final_avg_list, events)
     for i in differences:
-        print(f"{bacterial_id[i]} and {bacterial_id['-' + i]}: {round(differences[i], 5)} ± {round(uncertainties[i], 5)}")
+        print(f"{bacterial_id[i]} and {bacterial_id['-' + i]}: {round(differences[i], 7)} ± {round(uncertainties[i], 7)}")
         if abs(differences[i])>uncertainties[i]*3:
             print(f"{bacterial_id[i]} and {bacterial_id['-' + i]} counts differ significantly (more than 3 std)!\n")
         else:
