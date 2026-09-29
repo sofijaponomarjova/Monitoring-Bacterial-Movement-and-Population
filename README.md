@@ -63,13 +63,13 @@ __2. The table below illustrates the differences between the normal and the muta
 
 
 | Bacterial strains | Reported difference | Difference / Uncertainty | Significant (>3std) |
-|:---:|:---:| :--:| :--: |
-| E. coli WT VS E. coli mutant | 0.0323202370199831 ± 0.004522323370133003| 6.4 | Yes |
-|Bacillus subtilis WT VS Bacillus subtilis mutant | 0.005695145355036046 ± 0.0032959418543238657| 2| No |
-|Pseudomonas aeruginosa WT VS Pseudomonas aeruginosa antibiotic-resistant | 0.02389052908227569 ± 0.002374703366663008| 6| Yes |
-|Streptococcus pneumoniae VS Capsule-deficient streptococcus pneumoniae | 0.004906133360146596 ± 0.0005836584978728003| 5| Yes |
-|Mycobacterium tuberculosis VS Drug-resistant mycobacterium tuberculosis | 0.0004409885772039886 ± 0.000488300925559704| 1| No |
-|Salmonella enterica VS Salmonella mutant| 3.5539128580567214e-05 ± 6.859368307476926e-05| 0.516| No |
+|:---:|:---:| :--:|
+| E. coli WT VS E. coli mutant | 0.0323202370199831 ± 0.004522323370133003| Yes |
+|Bacillus subtilis WT VS Bacillus subtilis mutant | 0.005695145355036046 ± 0.0032959418543238657| No |
+|Pseudomonas aeruginosa WT VS Pseudomonas aeruginosa antibiotic-resistant | 0.02389052908227569 ± 0.002374703366663008| Yes |
+|Streptococcus pneumoniae VS Capsule-deficient streptococcus pneumoniae | 0.004906133360146596 ± 0.0005836584978728003| Yes |
+|Mycobacterium tuberculosis VS Drug-resistant mycobacterium tuberculosis | 0.0004409885772039886 ± 0.000488300925559704|  No |
+|Salmonella enterica VS Salmonella mutant| 3.5539128580567214e-05 ± 6.859368307476926e-05| No |
 
 <br>
 <br>
