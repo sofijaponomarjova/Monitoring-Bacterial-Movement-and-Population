@@ -62,7 +62,7 @@ __1. The project indicates the following average counts and statistical uncertai
 __2. The table below illustrates the differences between the normal and the mutant strain:__
 
 
-| Bacterial strains | Reported difference | Difference / Uncertainty | Significant (>3std) |
+| Bacterial strains | Reported difference | Significant (>3std) |
 |:---:|:---:| :--:|
 | E. coli WT VS E. coli mutant | 0.0323202370199831 ± 0.004522323370133003| Yes |
 |Bacillus subtilis WT VS Bacillus subtilis mutant | 0.005695145355036046 ± 0.0032959418543238657| No |
