@@ -33,7 +33,7 @@ Empty events were removed from further analyses and therefore 4614632 events wer
 To calculate average bacterial count the subsampling method was applied. Each file was treated as one subsample.
 Uncertainties were calculated as standard deviations of subsample averages.
 
-__1. The project indicates the following average counts and statistical uncertainties for each bacterial strain (results were rounded to 7 decemals):__
+__1. The project indicates the following average counts and statistical uncertainties for each bacterial strain:__
 
 * E. coli WT: 19.964037869108523 ± 0.03277297367603035
 
