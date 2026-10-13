@@ -84,7 +84,7 @@ counts were summed over all 10 subsamples and their difference was divided by th
 <img src="momentum_asymmetry.png" alt="Momentum asymmetry" width="700">
 The plot indicates the assymmetry between bacterium wild type and mutant for 6 bacterium species. The error bars signify one standard deviation.
 
-## Conclusion
+## _Conclusion_
 A significant asymmetry (exceeding 3 standard deviations) was discovered for E. coli (WT,mutant), Pseudomonas aeruginosa (WT, antibiotic-resistant), Streptococcus pneumoniae (normal, capsule-deficient) with the wild type more abundant in all three. For the rest of species - Bacillus subtilis, Mycobacterium tuberculosis and Salmonella enterica - no significant difference was found. <br>
 As a function of momentum the asymmetry decreases with momentum: it is larger for low momentum with high bacterial counts and lower for large momentum with low bacterial counts. Absolute errorbars decrease with increase of momentum, but increase relative to the difference. 
 
