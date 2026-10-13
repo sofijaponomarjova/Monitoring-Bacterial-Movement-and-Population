@@ -69,11 +69,9 @@ __2. The table below illustrates the differences between the normal and the muta
 |Streptococcus pneumoniae VS Capsule-deficient streptococcus pneumoniae | 0.00491 ± 0.00058| Yes |
 |Mycobacterium tuberculosis VS Drug-resistant mycobacterium tuberculosis | 0.00044 ± 0.00049|  No |
 |Salmonella enterica VS Salmonella mutant| 4e-05 ± 7e-05| No |
-
-<br>
 <br>
 Uncertainties are the standard deviation of single subsamples, a conservative estimate.<br>
-The difference was considered significant if it exceeded 3 standard deviations. 
+The difference was considered significant if it exceeded 3 standard deviations. <br>
 
 __3. Bacterial asymmetry as a function of momentum__
 
