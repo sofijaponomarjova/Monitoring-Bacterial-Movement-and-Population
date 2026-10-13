@@ -28,64 +28,75 @@ The project focuses on answering the following research questions:
 
 ## _Results_
 
-Empty events were removed from further analyses and therefore 4614632 events were analysed in this experiment. 
+10 files were analysed. Empty events were removed from further analyses and therefore 4614632 events were analysed in this experiment. 
 
-To calculate average bacterial count the subsampling method was applied. Each file was treated as one subsample.
-Uncertainties were calculated as standard deviations of subsample averages.
+To calculate average bacterial count the subsampling method was applied. Each file was treated as one subsample. For each subsample the count per event of each strain was calculated, and the final value is the weighted-mean per event over all 10 subsamples. Uncertainty is standard deviation of subsample averages.
 
 __1. The project indicates the following average counts and statistical uncertainties for each bacterial strain:__
 
-* E. coli WT: 19.964037869108523 ± 0.03277297367603035
+* E. coli WT: 19.96404 ± 0.03277
 
-* E. coli mutant: 19.93171763208854 ± 0.031862995623137325
+* E. coli mutant: 19.93172 ± 0.03186
 
-* Bacillus subtilis WT: 2.5109753063732927 ± 0.004760470013110588
+* Bacillus subtilis WT: 2.51098 ± 0.00476
 
-* Bacillus subtilis mutant: 2.505280161018257 ± 0.005510374977956562
+* Bacillus subtilis mutant: 2.50528 ± 0.00551
 
-* Pseudomonas aeruginosa WT: 1.2089139502348183 ± 0.0019158652790257898
+* Pseudomonas aeruginosa WT: 1.20891 ± 0.00192
 
-* Pseudomonas aeruginosa antibiotic-resistant: 1.1850234211525426 ± 0.002419119037614167
+* Pseudomonas aeruginosa antibiotic-resistant: 1.18502 ± 0.00242
 
-* Streptococcus pneumoniae:  0.2767999701818043 ± 0.0010762078233972018
+* Streptococcus pneumoniae:  0.2768 ± 0.00108
 
-* Capsule-deficient streptococcus pneumoniae: 0.27189383682165774 ± 0.0009852549484234705
+* Capsule-deficient streptococcus pneumoniae: 0.27189 ± 0.00099
 
-* Mycobacterium tuberculosis: 0.03946988622278006 ± 0.0002835326780196852
+* Mycobacterium tuberculosis: 0.03947 ± 0.00028
 
-* Drug-resistant mycobacterium tuberculosis: 0.03902889764557607 ± 0.00040171753717196235
+* Drug-resistant mycobacterium tuberculosis: 0.03903 ± 0.0004
 
-* Salmonella enterica: 0.0011879603834065208 ± 4.1700896418102735e-05
+* Salmonella enterica: 0.00119 ± 4e-05
 
-* Salmonella mutant: 0.0011524212548259536 ± 5.083297255816441e-05
+* Salmonella mutant: 0.00115 ± 5e-05
 
 __2. The table below illustrates the differences between the normal and the mutant strain:__
 
 
 | Bacterial strains | Reported difference | Significant (>3std) |
 |:---:|:---:| :--:|
-| E. coli WT VS E. coli mutant | 0.0323202370199831 ± 0.004522323370133003| Yes |
-|Bacillus subtilis WT VS Bacillus subtilis mutant | 0.005695145355036046 ± 0.0032959418543238657| No |
-|Pseudomonas aeruginosa WT VS Pseudomonas aeruginosa antibiotic-resistant | 0.02389052908227569 ± 0.002374703366663008| Yes |
-|Streptococcus pneumoniae VS Capsule-deficient streptococcus pneumoniae | 0.004906133360146596 ± 0.0005836584978728003| Yes |
-|Mycobacterium tuberculosis VS Drug-resistant mycobacterium tuberculosis | 0.0004409885772039886 ± 0.000488300925559704|  No |
-|Salmonella enterica VS Salmonella mutant| 3.5539128580567214e-05 ± 6.859368307476926e-05| No |
+| E. coli WT VS E. coli mutant | 0.03232 ± 0.00452| Yes |
+|Bacillus subtilis WT VS Bacillus subtilis mutant | 0.0057 ± 0.0033| No |
+|Pseudomonas aeruginosa WT VS Pseudomonas aeruginosa antibiotic-resistant | 0.02389 ± 0.00237| Yes |
+|Streptococcus pneumoniae VS Capsule-deficient streptococcus pneumoniae | 0.00491 ± 0.00058| Yes |
+|Mycobacterium tuberculosis VS Drug-resistant mycobacterium tuberculosis | 0.00044 ± 0.00049|  No |
+|Salmonella enterica VS Salmonella mutant| 4e-05 ± 7e-05| No |
 
 <br>
 <br>
-The difference was considered significant if it exceeded 3 standard-deviations. It was discovered that:
+Uncertainties are the standard deviation of single subsamples, a conservative estimate.<br>
+The difference was considered significant if it exceeded 3 standard deviations. 
 
-* E. coli (WT,mutant) 
-* Pseudomonas aeruginosa (WT, antibiotic-resistant) 
-* Streptococcus pneumoniae (normal, capsule-deficient)
+__3. Bacterial asymmetry as a function of momentum__
 
-differ significantly.
- 
+
+Momentum quantifies the motion of an object, it is calculated by multiplying mass and velocity. In this experiment the following formula was applied $p = \sqrt{p_x^2 + p_y^2 + p_z^2}$, where p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub> are momentum's components in different dimensions. 
+At first in each subsample bacteria were separated in 10 bins of equal width (5 ×10⁻²⁰ kg m/s) from 0 to 50 per strain. For each bin, wild-type and mutant
+counts were summed over all 10 subsamples and their difference was divided by the total number of events. Per-bin uncertainties follow the Poisson distribution: $$\sigma = \frac{\sqrt{N_{WT} + N_{mutant}}}{N_{events}}$$
+
+
+<img src="momentum_asymmetry.png" alt="Momentum asymmetry" width="700">
+The plot indicates the assymmetry between bacterium wild type and mutant for 6 bacterium species. The error bars signify one standard deviation.
+
+## Conclusion
+A significant asymmetry (exceeding 3 standard deviations) was discovered for E. coli (WT,mutant), Pseudomonas aeruginosa (WT, antibiotic-resistant), Streptococcus pneumoniae (normal, capsule-deficient) with the wild type more abundant in all three. For the rest of species - Bacillus subtilis, Mycobacterium tuberculosis and Salmonella enterica - no significant difference was found. <br>
+As a function of momentum the asymmetry decreases with momentum: it is larger for low momentum with high bacterial counts and lower for large momentum with low bacterial counts. Absolute errorbars decrease with increase of momentum, but increase relative to the difference. 
+
+
 ## _Installation_
 1. Make sure you have Python 3 installed. 
-2. Additionally Numpy package is required:
+2. Additionally NumPy and Matplotlib packages are required:
 ```bash
 pip install numpy
+pip install matplotlib
 ```
 
 3. Clone the repository
@@ -101,7 +112,9 @@ cd Monitoring-Bacterial-Movement-and-Population
 
 You can download the dataset files here: https://surfdrive.surf.nl/index.php/s/7udCnWTk4yMUASD 
 
-Please store all the files in one folder as program asks for folder's pathway!!
+Please store all the files in one folder as program asks for folder's pathway!!<br>
+output-Set0.txt (a single test event) is excluded automatically.
+
 
 ## _Usage_
 1. Open the repository in your VSC
@@ -112,5 +125,4 @@ Please store all the files in one folder as program asks for folder's pathway!!
 * task2.py - cleans the data and then calculates the momentum for each bacteria
 * week3.py - calculates the average amount of a bacterial strain per event/experiment in 1 sample
 * week4.py - calculates the average amount of a bacterial strain per event/experiment in all 10 samples (main results)
-
-
+* week5.py - plots the assymmetry between WT and mutants as a function of momentum
