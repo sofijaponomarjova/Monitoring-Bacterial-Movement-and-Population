@@ -71,7 +71,7 @@ __2. The table below illustrates the differences between the normal and the muta
 |Salmonella enterica VS Salmonella mutant| 4e-05 ± 7e-05| No |
 <br>
 Uncertainties are the standard deviation of single subsamples, a conservative estimate.<br>
-The difference was considered significant if it exceeded 3 standard deviations. <br>
+The difference was considered significant if it exceeded 3 standard deviations. <br><br>
 
 __3. Bacterial asymmetry as a function of momentum__
 
